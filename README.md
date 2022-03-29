@@ -1,5 +1,5 @@
-# 💎 Skeleton
-- O projeto Skeleton é um projeto de código aberto escrito em ASP.NET Core 6 com conceitos de DDD, CQRS, Event Sourcing, Message Brokers.
+# 💎 API Skeleton
+- API Skeleton é um projeto de código aberto escrito em ASP.NET Core 6 com conceitos de DDD, CQRS, Event Sourcing e Message Brokers.
 
 ## Como usar:
 - Você precisará do Visual Studio 2022 mais recente e do SDK do .NET Core mais recente.
