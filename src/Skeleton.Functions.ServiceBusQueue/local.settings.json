@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "EmailQueueName": "email",
+    "SmsQueueName": "sms",
+    "AzureWebJobsServiceBus": "",
+    "SendinblueApiKey": "",
+    "TwilioAccountSid": "",
+    "TwilioAuthToken": ""
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=LOCALHOST\\SQLEXPRESS;Database=skeleton;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
