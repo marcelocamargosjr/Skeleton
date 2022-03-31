@@ -6,7 +6,7 @@ using NetDevPack.Identity;
 using NetDevPack.Identity.Data;
 using NetDevPack.Identity.Jwt;
 
-namespace Skeleton.Infra.CrossCutting.Identity
+namespace Skeleton.Infra.CrossCutting.Identity.Configurations
 {
     public static class ApiIdentityConfig
     {

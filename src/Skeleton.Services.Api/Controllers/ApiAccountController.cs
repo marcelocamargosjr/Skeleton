@@ -37,7 +37,7 @@ namespace Skeleton.Services.Api.Controllers
             await SendEmail(
                 user.Email,
                 name,
-                int.Parse(_sendinblue.ResetYourPassword),
+                int.Parse(_sendinblue.ResetYourPasswordTemplateId),
                 new { name, callbackUrl });
         }
 
@@ -49,7 +49,7 @@ namespace Skeleton.Services.Api.Controllers
             await SendEmail(
                 user.Email,
                 name,
-                int.Parse(_sendinblue.ConfirmEmail),
+                int.Parse(_sendinblue.ConfirmEmailTemplateId),
                 new { name, callbackUrl });
         }
 
@@ -74,7 +74,7 @@ namespace Skeleton.Services.Api.Controllers
             await SendEmail(
                 user.Email,
                 name,
-                int.Parse(_sendinblue.AccountCreatedSuccessfully),
+                int.Parse(_sendinblue.AccountCreatedSuccessfullyTemplateId),
                 new { name });
         }
 
@@ -86,7 +86,7 @@ namespace Skeleton.Services.Api.Controllers
             await SendEmail(
                 user.Email,
                 name,
-                int.Parse(_sendinblue.PasswordResetSuccessfully),
+                int.Parse(_sendinblue.PasswordResetSuccessfullyTemplateId),
                 new { name });
         }
 

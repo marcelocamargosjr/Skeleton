@@ -1,5 +1,6 @@
 ﻿using FluentValidation.Results;
 using MediatR;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Skeleton.Application.Interfaces;
 using Skeleton.Application.Services;
@@ -11,6 +12,7 @@ using Skeleton.Domain.EventHandlers;
 using Skeleton.Domain.Events.Customer;
 using Skeleton.Domain.Interfaces;
 using Skeleton.Infra.CrossCutting.Bus;
+using Skeleton.Infra.CrossCutting.Bus.Configurations;
 using Skeleton.Infra.Data.Context;
 using Skeleton.Infra.Data.EventSourcing;
 using Skeleton.Infra.Data.Repository;
@@ -22,6 +24,12 @@ namespace Skeleton.Infra.CrossCutting.IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
+            // Domain Bus Config
+            services.AddOptions<MessageServiceBusConfig>().Configure<IConfiguration>((settings, configuration) =>
+            {
+                configuration.GetSection("MessageServiceBusConfig").Bind(settings);
+            });
+
             // Domain Bus
             services.AddScoped<IMediatorHandler, InMemoryBus>();
             services.AddScoped<IMessageHandler, MessageServiceBus>();

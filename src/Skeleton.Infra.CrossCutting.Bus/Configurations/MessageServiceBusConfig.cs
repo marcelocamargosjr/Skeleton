@@ -1,4 +1,4 @@
-﻿namespace Skeleton.Infra.CrossCutting.Bus
+﻿namespace Skeleton.Infra.CrossCutting.Bus.Configurations
 {
     public class MessageServiceBusConfig
     {

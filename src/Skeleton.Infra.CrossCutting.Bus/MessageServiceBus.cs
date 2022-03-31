@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using sib_api_v3_sdk.Api;
 using sib_api_v3_sdk.Client;
 using sib_api_v3_sdk.Model;
+using Skeleton.Infra.CrossCutting.Bus.Configurations;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;

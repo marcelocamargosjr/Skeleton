@@ -3,8 +3,7 @@ using System.Text.Json.Serialization;
 using MediatR;
 using NetDevPack.Identity;
 using NetDevPack.Identity.User;
-using Skeleton.Infra.CrossCutting.Bus;
-using Skeleton.Infra.CrossCutting.Identity;
+using Skeleton.Infra.CrossCutting.Identity.Configurations;
 using Skeleton.Services.Api.Configurations;
 
 const string allowSpecificOrigins = "allowSpecificOrigins";
@@ -75,9 +74,6 @@ builder.Services.AddDependencyInjectionConfiguration();
 
 // Problem Details Config
 builder.Services.AddProblemDetailsModelStateConfiguration();
-
-// Message Service Bus Config
-builder.Services.Configure<MessageServiceBusConfig>(builder.Configuration.GetSection("MessageServiceBusConfig"));
 
 // Client URI Config
 builder.Services.Configure<ClientUriConfig>(builder.Configuration.GetSection("ClientUriConfig"));

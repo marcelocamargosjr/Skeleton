@@ -6,9 +6,10 @@
     "EmailQueueName": "email",
     "SmsQueueName": "sms",
     "AzureWebJobsServiceBus": "",
-    "SendinblueApiKey": "",
-    "TwilioAccountSid": "",
-    "TwilioAuthToken": ""
+    "MessageServiceBusConfig:AzureServiceBusConnectionString": "",
+    "MessageServiceBusConfig:SendinblueApiKey": "",
+    "MessageServiceBusConfig:TwilioAccountSid": "",
+    "MessageServiceBusConfig:TwilioAuthToken": ""
   },
   "ConnectionStrings": {
     "DefaultConnection": "Server=LOCALHOST\\SQLEXPRESS;Database=skeleton;Trusted_Connection=True;MultipleActiveResultSets=true"

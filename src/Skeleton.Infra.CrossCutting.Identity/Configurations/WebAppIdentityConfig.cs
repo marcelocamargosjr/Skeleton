@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetDevPack.Identity;
 
-namespace Skeleton.Infra.CrossCutting.Identity
+namespace Skeleton.Infra.CrossCutting.Identity.Configurations
 {
     public static class WebAppIdentityConfig
     {
